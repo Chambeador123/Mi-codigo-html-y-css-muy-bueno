@@ -1,0 +1,79 @@
+.h
+{
+    font-family: sans-serif;
+    color: darkred;
+}
+.div
+{
+    color: darkred;
+    font-style: oblique;
+    font-family: Helvetica;
+}
+body 
+{
+    background-color: rgb(254, 254, 254);
+}
+#border
+{
+    border: dashed;
+    border-collapse: collapse;
+}
+#bord
+{
+    font-family: 'Courier New';
+}
+td
+{
+    border: dashed;
+}
+/* Inicio de header y footer */
+.headsec
+{
+    font-size: 40px;
+    color: #000;
+    font-weight: bold;
+    margin-left: 10px;
+}
+body 
+{
+    margin: 10px auto;
+}
+footer 
+{
+    width: 100%;
+    bottom: 0px;
+    background-color: #000;
+    color: #000;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.bodysec
+{
+    margin-left: 20px;
+}
+.span
+{
+    font-size: 2em;
+}
+#div1
+{
+    font-size: 7px;
+    color: white;
+}
+#div2
+{
+    font-size: 5px;
+    color: white;
+}
+#span5
+{
+    color: white;
+}
+#span6
+{
+    color: white;
+    font-size: 10px
+}
