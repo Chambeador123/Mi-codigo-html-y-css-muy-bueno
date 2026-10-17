@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">The best survey</h1>
+    <p id="description">Answer this survey to have a chance at winning 1 dollar</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Username:</label>
+      <input type="text" id="name" required placeholder="John Doe">
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" required placeholder="example@gmail.com">
+      <label for="number" id="number-label">Age:</label>
+      <input type="number" id="number" min="5" max="100" placeholder="20">
+      <select id="dropdown">
+        <option>Chamba</option>
+        <option>Trabajo</option>
+      </select>
+      <input type="radio" name="radio" value="pizza">Pizza
+      <input type="radio" name="radio" value="burger">Burger
+      <br>
+      <p>Where did you find us?</p>
+      <input type="checkbox" value="checkbox">Google
+      <input type="checkbox" value="checkbox">Facebook
+      <input type="checkbox" value="checkbox">Instagram
+      <input type="checkbox" value="checkbox">Advertising
+      <input type="checkbox" value="checkbox">Randomly
+      <input type="checkbox" value="checkbox">Other
+      <br>
+      <p>Have additional comments?</p>
+      <textarea></textarea>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
