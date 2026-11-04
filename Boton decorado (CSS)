@@ -1,0 +1,58 @@
+body{
+    background-color: gray;
+}
+header
+{
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.fordiv
+{
+    border: 2px solid bisque;
+    background-color: bisque;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.button
+{
+    display: flex;
+    justify-content: center;
+}
+button
+{
+    border-width: 5px;
+    margin-top: 5em;
+    cursor: pointer;
+    width: 15em;
+    height: 5em;
+    border-radius: 10px;
+    background: linear-gradient(180deg, darkgray, black);
+    color: #fff;
+}
+@keyframes border-color-changing
+{
+    0%  {
+        border-color: red;
+    }
+    25% {
+        border-color: lightgreen;
+    }
+    50% {
+        border-color: blue;
+    }
+    75% {
+        border-color: steelblue
+    }
+    100% {
+        border-color: turquoise;
+    }
+}
+button
+{
+    animation-name: border-color-changing;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
