@@ -1,0 +1,123 @@
+:root
+{
+    --primary-color-white: #fff;
+    --font-families: 'Courier New', sans-serif, Verdana;
+    --font-families-2: monospace, sans-serif, 'Times New Roman', Times;
+}
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+.forform
+{
+    border: 1px solid black;
+    box-shadow: 1rem 1rem 1rem;
+}
+.size
+{
+    font-size: 2em;
+    margin-bottom: 0;
+}
+.centered
+{
+    justify-content: center;
+}
+.form
+{
+    border: 2px  black;
+    padding: 5em;
+    background-color: var(--primary-color-white);
+    border-radius: 10px;
+    box-shadow: -1vh 2vh 3vh;
+}
+button
+{
+    background-color: brown;
+    font-family: var(--font-families);
+    color: var(--primary-color-white);
+    box-shadow: 0vh 5px 1em black;
+    transform: translate(7em, 2em);
+    cursor: pointer;
+}
+input:hover
+{
+    cursor: pointer;
+}
+.margin-email, .margin-password, .margin-tel, .margin-color
+{
+    margin-bottom: 0.5em
+}
+.fora
+{
+    transform: translate(5em, -1em);
+}
+.sidebar
+{
+    transform: translate(5em, 0);
+    background-color: var(--primary-color-white);
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-self: end;
+    padding: 10px;
+    width: 20em
+}
+.aligned-right
+{
+    font-family: var(--font-families);
+}
+.aligned-center
+{
+    text-align: center;
+    font-family: var(--font-families-2);
+    font-size: 13px;
+}
+.interrupt-alignment
+{
+    text-align: left;
+}
+.sub-list
+{
+    font-size: 10.5px;
+}
+figcaption
+{
+    font-size: 11px;
+}
+input
+{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2px
+}
+@keyframes border
+{
+    0% {
+        border-color: red;
+    }
+    50% {
+        border-color: lightgreen;
+    }
+    99% {
+        border-color: lightblue
+    }
+    100% {
+        border-color: red;
+    }
+}
+input:hover
+{
+    animation-name: border;
+    animation-duration: infinite;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0.01ms;
+    animation-duration: 1s;
+}
