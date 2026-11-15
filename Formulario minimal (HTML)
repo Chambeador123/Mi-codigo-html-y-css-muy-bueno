@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cool form">
+    <link rel="stylesheet" href="Textfile.css">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <section aria-labelledby="the-form">
+            <form id="the-form" class="for-form">
+                <div class="form">
+                  <p class="size">Accede a tu cuenta</p>
+                  <br>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" class="margin-email input">
+                  <br>
+                  <label for="password">Contrasena:</label>
+                  <input type="password" id="password" name="password" class="margin-password input">
+                  <br>
+                  <label for="telephone">Telefono</label>
+                  <input type="tel" id="telephone" name="telephone" class="margin-tel input">
+                  <br>
+                  <label for="color">Elige un color:</label>
+                  <input type="color" id="color" name="color" class="margin-color">
+                  <br>
+                  <!-- Lo nuevo en el boton; alerta con inline JS -->
+                  <button onclick="alert('Bienvenido! En seguida seras enviado a la pagina principal')">Acceder</button>
+            </form>
+        </section>
+    </main>
+    <aside class="sidebar">
+        <b class="aligned-right">Patrocinado</b>
+        <br>
+        <div class="aligned-center">
+            <p>Cansado de la misma carne sin sabor?</p>
+            <p><b>Carniceria mi Pollazo</b></p>
+            <p>Somos los mas conocidos del barrio wey!</p>
+            <p>Tienes desde esto para tragaaaar:</p>
+            <ul class="interrupt-alignment">
+                <li>Queque</li>
+                <li>Tacos de caca</li>
+                <li>Calabaza con relleno de calabaza</li>
+                <li>Ryzen 9800x3d
+                    <ul class="sub-list">
+                        <li>Con un Matcha de hojas de palmera!</li>
+                    </ul>
+                </li>
+                <li>Y mucho mas!</li>
+            </ul>
+            <figure>
+                <img src="carniceria-chapala-imagen-logo.webp" alt="Nuestro logo, un cerdito con Chapala carniceria, nuestro nombre.">
+                <figcaption>Carniceria chapala logo</figcaption>
+            </figure>
+            <p>Somos los meros meros!</p>
+            <address>
+                <p>Email para <a href="mailto:example@.comm">Chapala</a></p>
+                <p>Llama a +123-456-789</p>
+                <p>En calle Mi Tio, Antartida</p>
+            </address>
+        </div>
+    </aside>
+</body>
+</html>
