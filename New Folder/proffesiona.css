@@ -1,0 +1,236 @@
+* Tokens/Variables */
+:root 
+{
+    --color-bg: #ffffff;
+    --color-surface: #f6f7f8;
+    --color-border: #dfe2e5;
+    --color-text: #1a1a1a;
+    --color-text-muted: #5b6067;
+    --color-primary: #1b3a5c;
+    --color-primary-hover: #14293f;
+
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-1g: 1.5rem;
+    --space-x1: 2.5rem;
+    --space-2x1: 4rem;
+
+    --radius-md: 0.75rem;
+    --shadow-low: 0 1px 2px rgb(0 0 0 / 0.08);
+    --shadow-med: 0 8px 24px rgb(0 0 0 / 0.10);
+}
+
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+}
+img
+{
+    max-width: 100%;
+    display: block;
+}
+
+body
+{
+    font-family: Georgia, 'Times New Roman', serif;
+    color: var(--color-text);
+    background: var(--color-bg);
+    line-height: 1.6;
+}
+h1, h2, h3
+{
+    font-family: Times, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.15;
+}
+a
+{
+    color: var(--color-primary);
+}
+
+.skip-link
+{
+    position: absolute;
+    left: -999px;
+    top: 0;
+    background: var(--color-primary);
+    color: white;
+    padding: var(--space-sm) var(--space-md);
+    z-index: 100; 
+}
+.skip-link:focus
+{
+    left: var(--space-sm);
+}
+
+/* Header */
+.site-header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-1g) var(--space-x1);
+    border-bottom: 1px solid var(--color-border);
+}
+.logo
+{
+    font-family: Times, serif, Arial, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-text);
+}
+.nav-list
+{
+    list-style: none;
+    display: flex;
+    gap: var(--space-1g);
+    margin: 0;
+    padding: 0;
+}
+.nav-list a
+{
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: Times, serif, Arial, sans-serif;
+    font-size: 0.95rem;
+}
+.nav-list a:hover, .nav-list a:focus-visible
+{
+    color: var(--color-primary);
+}
+.nav-list a[aria-current="page"]
+{
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+/* Hero */
+.hero
+{
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: var(--space-2x1) var(--space-x1) var(--space-x1);
+    text-align: center;
+}
+.hero-title
+{
+    font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
+    margin: 0 0 var(--space-md);
+}
+.hero-subtitle
+{
+    color: var(--color-text-muted);
+    font-size: 1.15rem;
+}
+
+/* Trabajos */
+.work
+{
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 var(--space-x1) var(--space-2x1);
+}
+.work h2
+{
+    margin-bottom: var(--space-1g);
+}
+.card-grid
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: var(--space-1g);
+}
+.card
+{
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-low);
+    transition: transform 180ms ease-out, box-shadow 180ms ease-out;
+}
+.card:hover
+{
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-med);
+}
+.card-image
+{
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    width: 100%;
+}
+.card-body
+{
+    padding: var(--space-1g);
+}
+.card-title
+{
+    margin: 0 0 var(--space-sm);
+    font-size: 1.15rem;
+}
+.card-text
+{
+    color: var(--color-text-muted);
+    margin: 0 0 var(--space-md);
+}
+.card-link
+{
+    font-family: Times, serif, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+.card-link:hover, .card-link:focus-visible
+{
+    text-decoration: underline;
+}
+/* Contact */
+.contact
+{
+    text-align: center;
+    padding: var(--space-2x1) var(--space-x1);
+    background-color: var(--color-surface);
+}
+.btn
+{
+    display: inline-block;
+    margin-top: var(--space-md);
+    background: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    padding: 0.75em 1.5em;
+    border-radius: var(--radius-md);
+    font-family: Times, serif, sans-serif;
+    font-weight: 600;
+    transition: background-color 150ms ease-out;
+}
+.btn:hover, .btn:focus-visible
+{
+    background: var(--color-primary-hover);
+}
+
+/* Footer */
+.site-footer
+{
+    text-align: center;
+    padding: var(--space-1g);
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
+/* Diseno Responsive */
+@media (max-width: 40rem) 
+{
+    .site-header {
+        flex-direction: column;
+        gap: var(--space-md);
+        text-align: center;
+    }
+    .nav-list {
+        gap: var(--space-md);
+    }
+}
